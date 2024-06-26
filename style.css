@@ -172,42 +172,52 @@ transition: .5s ease ;
 
 }
 
-.services h2{
-    margin-bottom: 5rem;
-    
+.services {
+    padding: 5rem 0;
+    text-align: center;
 }
-.services-container{
+
+.services h2 {
+    margin-bottom: 5rem;
+}
+
+.services-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    
 }
-.services-container .services-box{
+
+.services-box {
     flex: 1 1 30rem;
     background: var(--bg-color);
-    padding: 3rem 2rem 4rem;
+    padding: 3rem 2rem;
     border-radius: 2rem;
     text-align: center;
     border: .2rem solid var(--bg-color);
-    transition: .5s ease;
+    transition: border-color 0.5s ease, transform 0.5s ease;
 }
-.services-container .services-box:hover{
+
+.services-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
 }
+
 .services-box i {
     font-size: 7rem;
     color: var(--main-color);
 }
-.services-box h3{
-    font: size 2.6rem;
+
+.services-box h3 {
+    font-size: 2.6rem;
 }
-.services-box p{
+
+.services-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+
 .portfolio {
     background: var(--bg-color);
     padding: 5rem 9%;
